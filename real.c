@@ -33,7 +33,7 @@ double setREAL(REAL *p, double v) {
 }
 
 void displayREAL(void *v, FILE *fp) {
-    fprintf(fp, "%g", getREAL((REAL *)v));
+    fprintf(fp, "%f", getREAL((REAL *)v));
 }
 
 double compareREAL(void *v, void *w) {
