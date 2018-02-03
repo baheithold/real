@@ -9,6 +9,10 @@
 #include <assert.h>
 #include "real.h"
 
+struct REAL {
+    double value;
+};
+
 REAL *newREAL(double x) {
     REAL *p = malloc(sizeof(REAL));
     assert(p != 0);
