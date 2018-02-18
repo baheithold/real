@@ -43,6 +43,13 @@ int compareREAL(void *v, void *w) {
     return 0;
 }
 
+int rcompareREAL(void *v, void *w) {
+    assert(v != NULL && w != NULL);
+    if (getREAL(v) > getREAL(w)) return -1;
+    else if (getREAL(v) < getREAL(w)) return 1;
+    return 0;
+}
+
 void freeREAL(void *v) {
     free((REAL *)v);
 }
